@@ -23,19 +23,19 @@ const SkillsList = () => {
 
   const skills = {
     "Software Development": [
-      "Full-Stack Web Development",
-      "React, Node.js, and Express.js",
-      "Spring Boot & Java Development",
+      "Spring Boot, Node.js / Express, React",
+      "REST, GraphQL & Microservices",
+      "Java, Python, TypeScript & SQL",
     ],
     "Machine Learning & AI": [
-      "Deep Learning & NLP",
-      "LLMs and Generative AI",
-      "Fine-tuning models with Hugging Face",
+      "LangGraph & LLM Fine-tuning",
+      "PyTorch, RAG & Generative AI",
+      "Llama-2, Mistral & 4-bit Quantization",
     ],
     "Cloud & DevOps": [
-      "AWS, Docker, Kubernetes",
-      "CI/CD Pipelines",
-      "FastAPI & Backend Deployment",
+      "AWS, OCI, Docker & Kubernetes",
+      "PostgreSQL, MongoDB, Redis & Kafka",
+      "CI/CD & Event-driven Architecture",
     ],
   };
 

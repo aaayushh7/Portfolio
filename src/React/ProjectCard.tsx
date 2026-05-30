@@ -4,13 +4,16 @@ import SpotlightCard from './SpotlightCard';
 
 interface ProjectCardProps {
   title: string;
-  image: ImageMetadata;
+  image?: ImageMetadata;
+  imageSrc?: string;
   link: string;
   preview: string;
   status: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, link, preview, status }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, imageSrc, link, preview, status }) => {
+  const src = image?.src ?? imageSrc;
+
   return (
     <SpotlightCard className="group" spotlightColor="rgba(164, 118, 255, 0.2)">
       <a
@@ -19,12 +22,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, link, preview, 
         rel="noopener noreferrer"
         className="block"
       >
-        <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
-          <img
-            src={image.src}
-            alt={title}
-            className="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
-          />
+        <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4 bg-[#1414149c] border border-[var(--white-icon-tr)]">
+          {src ? (
+            <img
+              src={src}
+              alt={title}
+              className="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          ) : (
+            <div
+              className="w-full h-48 md:h-72 flex items-center justify-center text-[var(--white-icon)] text-sm px-6 text-center"
+              aria-hidden="true"
+            >
+              No preview image
+            </div>
+          )}
         </div>
         <div className="flex items-center px-3">
           <div className="flex-grow">

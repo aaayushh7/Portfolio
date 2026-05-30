@@ -5,6 +5,8 @@ import Prism from "../../public/prism.png";
 import Sonch from "../../public/sonch.png";
 import bucket from "../../public/bucket.png";
 import Mealy from "../../public/mealy.jpg";
+import Pipeline from "../../public/pipeline.png";
+import Naukri from "../../public/naukri.png";
 import Trackhub from "../../public/trackhub.png";
 import ProjectCard from "../React/ProjectCard";
 import FuzzyText from "../React/FuzzyText";
@@ -13,13 +15,28 @@ const enableHover = true;
 
 interface Project {
   title: string;
-  image: ImageMetadata;
+  image?: ImageMetadata;
+  imageSrc?: string;
   link: string;
   preview: string;
   status: string;
 }
 
 const projects: Project[] = [
+  {
+    title: "Test Generation Pipeline",
+    image: Pipeline as ImageMetadata,
+    link: "https://github.com/aaayushh7/TestGeneration-execution-pipeline",
+    preview: "https://github.com/aaayushh7/TestGeneration-execution-pipeline",
+    status: "Developed",
+  },
+  {
+    title: "Naukri Profile Automation",
+    image: Naukri as ImageMetadata,
+    link: "https://github.com/aaayushh7/naukri-profile-automation",
+    preview: "https://github.com/aaayushh7/naukri-profile-automation",
+    status: "Developed",
+  },
   {
     title: "Mealy",
     image: Mealy as ImageMetadata,

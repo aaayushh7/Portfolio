@@ -59,11 +59,11 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
               <a href="tel:+916306500300">+91 6306500300</a>
             </div>
             <div className="social-links">
-              <a href="https://linkedin.com/in/ayush-tiwari-538ab824b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/ayush-tiwari-538ab824b " target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <span>|</span>
               <a href="https://aaayushh7.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
               <span>|</span>
-              <a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">GitHub: 50+ projects</a>
+              <a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
 
@@ -73,21 +73,11 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
               <div className="subheading">
                 <div>
                   <h3>SRM Institute of Science and Technology</h3>
-                  <p>B.Tech Computer Science (CGPA: 8.55/10)</p>
+                  <p>B.Tech, Computer Science — CGPA: 8.6 / 10</p>
                 </div>
                 <div className="date-location">
-                  <p>Aug 2022 – Jun 2026</p>
+                  <p>Aug 2022 – Jun 2026 (expected)</p>
                   <p>Chennai, India</p>
-                </div>
-              </div>
-              <div className="subheading">
-                <div>
-                  <h3>Lucknow Public School</h3>
-                  <p>Higher Secondary Education (XII: 78%, X: 92.8%)</p>
-                </div>
-                <div className="date-location">
-                  <p>Apr 2020 – Apr 2022</p>
-                  <p>Lucknow, India</p>
                 </div>
               </div>
             </div>
@@ -96,6 +86,51 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
           <section className="resume-section">
             <h2>Experience</h2>
             <div className="section-content">
+              <div className="subheading">
+                <div>
+                  <h3>Software Engineer Intern, R&D</h3>
+                  <p>Genpact India Pvt. Ltd.</p>
+                </div>
+                <div className="date-location">
+                  <p>Jan 2026 – Present</p>
+                  <p>Bengaluru, India</p>
+                </div>
+              </div>
+              <ul>
+                <li>Architected a Jira webhook-driven autonomous API QA pipeline (Python + LangGraph) that auto-extracted acceptance criteria from issue descriptions and orchestrated multi-stage test generation — covering positive, negative, and edge-case scenarios — with results persisted in PostgreSQL.</li>
+                <li>Built a RAG-based retrieval layer to dynamically surface contextually relevant OpenAPI specs per Jira issue, enabling LLM agents to generate schema-aware test cases without manual specification lookup.</li>
+                <li>Engineered a rule-based validation and enrichment engine that verified generated tests against live API schemas and auto-repaired malformed payloads — eliminating LLM dependency for structural correction and expanding coverage via sampling-based scenario generation.</li>
+                <li>Executed batched, multithreaded API tests via Python concurrent.futures and auto-generated frontend QA reports with expected vs. actual responses and pass/fail analysis, reducing repetitive manual API testing effort by 65%.</li>
+              </ul>
+
+              <div className="subheading">
+                <div>
+                  <h3>Freelance Software Developer</h3>
+                  <p>Remote / Chennai, India</p>
+                </div>
+                <div className="date-location">
+                  <p>Jun 2025 – Dec 2025</p>
+                </div>
+              </div>
+              <ul>
+                <li>Architected and delivered a multi-platform grocery marketplace (Android / iOS / Web) end-to-end: IONIC Capacitor mobile apps, Node.js / Express / MongoDB backend, and a real-time order and inventory management admin dashboard (Rs.85K contract).</li>
+              </ul>
+
+              <div className="subheading">
+                <div>
+                  <h3>Research Intern</h3>
+                  <p>Samsung PRISM Research</p>
+                </div>
+                <div className="date-location">
+                  <p>Mar 2024 – Nov 2024</p>
+                  <p>Chennai, India</p>
+                </div>
+              </div>
+              <ul>
+                <li>Fine-tuned Llama-2-7b for sensor anomaly detection (custom attention layers), achieving 85% accuracy (+12% vs. baseline); deployed as a RESTful inference service on Docker / Kubernetes.</li>
+                <li>Reduced inference latency and compute cost by 35% via 4-bit quantization and CUDA kernel optimizations; service processed 500+ data points/sec at 99.8% uptime.</li>
+              </ul>
+
               <div className="subheading">
                 <div>
                   <h3>Software Engineer Intern</h3>
@@ -107,41 +142,8 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
                 </div>
               </div>
               <ul>
-                <li>Engineered AI video conferencing platform serving 200+ daily users, reducing latency by 45% through WebRTC optimizations.</li>
-                <li>Boosted Next.js performance by 30% (2.2s load time) via code splitting and lazy loading techniques.</li>
-                <li>Automated meeting transcriptions saving 15+ weekly hours for 50+ teams.</li>
-              </ul>
-
-              <div className="subheading">
-                <div>
-                  <h3>Research Intern</h3>
-                  <p>Samsung Prism Research</p>
-                </div>
-                <div className="date-location">
-                  <p>Mar 2024 – Nov 2024</p>
-                  <p>Chennai, India</p>
-                </div>
-              </div>
-              <ul>
-                <li>Achieved 85% anomaly detection accuracy (12% improvement) by fine-tuning Llama2-7b with custom attention mechanisms.</li>
-                <li>Accelerated model inference by 35% through quantization and CUDA kernel optimizations.</li>
-                <li>Deployed edge solution processing 500+ sensor data points/second with 99.8% uptime.</li>
-              </ul>
-
-              <div className="subheading">
-                <div>
-                  <h3>Web Development Head</h3>
-                  <p>CINTEL's Next-Gen AΙ</p>
-                </div>
-                <div className="date-location">
-                  <p>Aug 2023 – Jun 2024</p>
-                  <p>Chennai, India</p>
-                </div>
-              </div>
-              <ul>
-                <li>Led team of 8 engineers delivering 12+ full-stack solutions with 99.9% uptime for 1000+ users.</li>
-                [span_0](start_span)<li>Mentored 15+ developers; improved code review efficiency by 25% through workshop training.[span_0](end_span)</li>
-                <li>Automated CI/CD pipelines increasing deployment frequency by 40% and reducing errors by 60%.</li>
+                <li>Developed AI video-conferencing backend (Node.js / Express) with WebRTC pipeline optimizations, cutting end-to-end latency 45% for 50+ DAU; improved Next.js app load time by 30% (to 2.2s) via route-based code splitting and lazy loading.</li>
+                <li>Automated meeting transcription with durable background queues, saving 15+ manual hours/week across 10+ teams; optimized SQL query performance through targeted indexing and partitioning, reducing query cost by 30%.</li>
               </ul>
             </div>
           </section>
@@ -150,29 +152,23 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
             <h2>Projects</h2>
             <div className="section-content">
               <div className="project">
-                <h3><a href="https://cravehub.store/" target="_blank" rel="noopener noreferrer">CraveHub | Production Q-commerce Platform (React, Node, Ionic)</a></h3>
+                <h3><a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">Pastebin-Lite | Java 17, Spring Boot, PostgreSQL, React (Jan 2026)</a></h3>
                 <ul>
-                  [span_1](start_span)<li>Architected quick commerce solution handling 50+ concurrent orders with 99.5% reliability.[span_1](end_span)</li>
-                  [span_2](start_span)<li>Generated 80K+ revenue through freelance development; iOS/Android launch scheduled August 2024.[span_2](end_span)</li>
-                  [span_3](start_span)<li>Integrated payment gateway processing 8L+ transactions; reduced cart abandonment by 22%.[span_3](end_span)</li>
+                  <li>Built a paste-sharing service with TTL-based expiry, atomic view-count updates (database transactions preventing race conditions under concurrent load), and cryptographically secure 10-char IDs via SecureRandom.</li>
                 </ul>
               </div>
 
               <div className="project">
-                <h3><a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">BookNest | AI Reading Platform (Mistral AI, React, Firebase)</a></h3>
+                <h3><a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">URL Shortener Service | Java, Spring Boot, Redis, PostgreSQL (Dec 2025)</a></h3>
                 <ul>
-                  <li>Built Fable-like platform with Google Auth, reading streaks, and session notes; [span_4](start_span)500+ registered users.[span_4](end_span)</li>
-                  <li>Implemented QR scanning reducing book entry time by 95% (60s to 3s); [span_5](start_span)10K+ summaries generated.[span_5](end_span)</li>
-                  <li>Boosted engagement 65% using Mistral AI recommendations and genre-based achievement badges.</li>
+                  <li>Engineered a scalable URL shortening service with custom aliases, redirect analytics, and expiration policies; implemented Redis caching and composite database indexing to minimise redirect latency under high concurrency.</li>
                 </ul>
               </div>
 
               <div className="project">
-                <h3><a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">Authenticheck | Secure Video Platform (WebRTC, TensorFlow.js)</a></h3>
+                <h3><a href="https://github.com/aaayushh7" target="_blank" rel="noopener noreferrer">BookNest | Mistral AI, React, Firebase (Aug 2025)</a></h3>
                 <ul>
-                  [span_6](start_span)<li>Built real-time facial recognition with 98.7% accuracy preventing 120+ unauthorized access attempts.[span_6](end_span)</li>
-                  <li>Reduced bandwidth usage by 30% through video compression algorithms.</li>
-                  <li>Automated meeting summaries saving participants 15+ hours/week in documentation.</li>
+                  <li>Built an AI-assisted reading platform with ISBN barcode scanning (reducing book-entry time by 95%), personalised Mistral-7B recommendations, and gamified streaks; scaled to 100+ users with a 65% engagement lift.</li>
                 </ul>
               </div>
             </div>
@@ -182,11 +178,12 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
             <h2>Technical Skills</h2>
             <div className="section-content">
               <ul className="skills-list">
-                <li><strong>Languages:</strong> JavaScript/TS, Python, Java (Proficient)</li>
-                <li><strong>Backend:</strong> Node.js, Express, Microservices, REST/GraphQL, AWS Lambda</li>
-                <li><strong>AI/ML:</strong> PyTorch, TensorFlow, LLM Fine-tuning, Computer Vision, NLP</li>
-                <li><strong>Infra:</strong> AWS, Docker, Kubernetes, CI/CD, Redis, MongoDB Atlas</li>
-                <li><strong>Security:</strong> JWT, OAuth2, SSL/TLS, Cybersecurity Best Practices</li>
+                <li><strong>Languages:</strong> Java, Python, JavaScript / TypeScript, SQL, C++</li>
+                <li><strong>Backend & APIs:</strong> Spring Boot, Node.js / Express, FastAPI, REST, GraphQL, Microservices, Event-driven Architecture</li>
+                <li><strong>Databases & Messaging:</strong> PostgreSQL, MongoDB, Redis, Kafka</li>
+                <li><strong>Cloud & DevOps:</strong> Oracle Cloud Infrastructure (OCI), AWS (EC2, S3), Docker, Kubernetes, CI/CD</li>
+                <li><strong>AI / ML:</strong> PyTorch, LangGraph, LLM Fine-tuning (Llama-2, Mistral), 4-bit Quantization</li>
+                <li><strong>Concepts:</strong> System Design, Software Architecture, Data Structures & Algorithms, Distributed Systems, Concurrency, Observability</li>
               </ul>
             </div>
           </section>
@@ -195,10 +192,8 @@ const Resume: React.FC<ResumeProps> = ({ onClose }) => {
             <h2>Certifications</h2>
             <div className="section-content">
               <ul className="cert-list">
-                <li>JPMorgan Chase: Software Engineering & Investment Banking Virtual Experience (2025)</li>
                 <li>Oracle: Cloud Infrastructure (OCI) Foundations Associate (2024)</li>
                 <li>Fortinet: Certified Associate in Cybersecurity (2024)</li>
-                <li>Coursera: Data Structures and Algorithms Specialization</li>
               </ul>
             </div>
           </section>
